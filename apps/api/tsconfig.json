@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",             // Компилируем в современный JS
+    "module": "NodeNext",           // Используем современные Node.js модули (ESM)
+    "moduleResolution": "NodeNext", // Как TS будет искать модули
+    "outDir": "./dist",             // Куда складывать скомпилированный JS
+    "rootDir": "./src",             // Откуда брать TS файлы
+    "strict": true,                 // Включаем строгую проверку типов (обязательно!)
+    "esModuleInterop": true,        // Позволяет делать import express from 'express'
+    "skipLibCheck": true,           // Ускоряет компиляцию, пропуская проверку типов в node_modules
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true       // Позволяет импортировать .json файлы
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

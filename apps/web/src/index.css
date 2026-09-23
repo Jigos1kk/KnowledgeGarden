@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.custom-text{
+  @apply text-2xl underline
+}
