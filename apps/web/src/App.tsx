@@ -1,10 +1,12 @@
+import { 
+  Button
+} from './components/'
+
 function App() {
   return (
-    <>
-      <div className="custom-text">
-        Привет
-      </div>
-    </>
+    <div className="container">
+      <Button color="gray-400">1234</Button>
+    </div>
   );
 }
 
